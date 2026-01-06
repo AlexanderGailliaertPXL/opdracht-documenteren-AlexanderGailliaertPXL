@@ -1,0 +1,121 @@
+```cisco
+Current configuration : 1736 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname Switch-ontwikkelaars-verdiep-1
+!
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+!
+!
+!
+ip domain-name tns
+!
+username alexander privilege 1 password 7 08325F460815000F1305080138
+username lector privilege 1 password 7 082D494D1D1617464058
+username personel privilege 1 password 7 08325F46191C17041D050908
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+!
+interface FastEthernet0/2
+!
+interface FastEthernet0/3
+!
+interface FastEthernet0/4
+!
+interface FastEthernet0/5
+!
+interface FastEthernet0/6
+!
+interface FastEthernet0/7
+!
+interface FastEthernet0/8
+!
+interface FastEthernet0/9
+!
+interface FastEthernet0/10
+!
+interface FastEthernet0/11
+!
+interface FastEthernet0/12
+!
+interface FastEthernet0/13
+ shutdown
+!
+interface FastEthernet0/14
+ shutdown
+!
+interface FastEthernet0/15
+ shutdown
+!
+interface FastEthernet0/16
+ shutdown
+!
+interface FastEthernet0/17
+ shutdown
+!
+interface FastEthernet0/18
+ shutdown
+!
+interface FastEthernet0/19
+ shutdown
+!
+interface FastEthernet0/20
+ shutdown
+!
+interface FastEthernet0/21
+ shutdown
+!
+interface FastEthernet0/22
+ shutdown
+!
+interface FastEthernet0/23
+ shutdown
+!
+interface FastEthernet0/24
+ shutdown
+!
+interface GigabitEthernet0/1
+!
+interface GigabitEthernet0/2
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan10
+ ip address 192.168.1.2 255.255.255.240
+!
+ip default-gateway 192.168.1.1
+!
+!
+!
+!
+line con 0
+ password 7 082243401A160912
+ login
+!
+line vty 0 4
+ exec-timeout 60 0
+ password 7 08375857
+ login
+ transport input ssh
+line vty 5 15
+ exec-timeout 60 0
+ password 7 08375857
+ login
+ transport input ssh
+!
+!
+!
+!
+end
+```cisco
