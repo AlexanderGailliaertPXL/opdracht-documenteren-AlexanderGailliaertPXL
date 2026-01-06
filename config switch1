@@ -113,9 +113,6 @@ line vty 5 15
  password 7 08375857
  login
  transport input ssh
-!
-!
-!
-!
+
 end
 ```cisco
